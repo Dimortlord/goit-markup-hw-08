@@ -22,7 +22,14 @@
       url(../image/mobile/header-img@2x.jpg);
   }
 
+  @media screen and (min-width: 480px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
   @media screen and (min-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../image/tablet/header-img.jpg);
 
@@ -35,6 +42,8 @@
     }
   }
   @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../image/desktop/header.jpg);
 
@@ -122,13 +131,17 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
-  height: 609px;
+
   background-color: var(--primary-backgroung-color);
   border-radius: 4px;
   transition: opacity 0.6s ease-out 0.2s, transform 0.6s ease-out 0.2s;
   transform: translate(-50%, -50%) rotate(0) scale(1);
   opacity: 1;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
 
   @media screen and (min-width: 768px) {
   }
@@ -265,6 +278,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  align-items: flex-start;
 }
 
 .form-field_checkbox__input {

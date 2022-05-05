@@ -93,12 +93,16 @@
 .menu-contacts__link {
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
+  font-size: 26px;
 
   letter-spacing: 0.02em;
 
   color: #2196f3;
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+    line-height: 1.17;
+  }
 }
 
 .menu-contacts__link-mail {
