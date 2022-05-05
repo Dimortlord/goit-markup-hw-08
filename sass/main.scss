@@ -1,0 +1,21 @@
+/*___________________Utils_____________________________*/
+
+@import './utils/vars';
+@import './utils/vision-block.scss';
+
+/*___________________BASE_____________________________*/
+@import './base/base';
+@import './base/reset';
+@import './base/animations';
+
+/* __________________ COMPONENTS ____________________*/
+
+@import './components/header';
+@import './components/hero';
+@import './components/features';
+@import './components/our-work';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/portfolio-information';
+@import './components/mobile-menu';
