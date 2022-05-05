@@ -5,8 +5,8 @@
 
   text-align: center;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,7 +114,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 100;
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
@@ -160,7 +160,7 @@
 
 .modal-window__close-btn {
   padding: 6px;
-  top: 8px;
+  top: 40px;
   right: 8px;
   position: absolute;
   display: flex;
@@ -168,6 +168,10 @@
   cursor: pointer;
   background-color: transparent;
   border-color: rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: 480px) {
+    top: 8px;
+  }
 
   &:focus .modal-window__icon-close {
     fill: var(--accent-color);
